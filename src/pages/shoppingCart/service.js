@@ -1,8 +1,9 @@
 import {getData} from './dataHelper';
+import {BASIC_URL} from '../../constants';
 
 const getProducts = () => {
   //getData返回axios的响应结构，所以要把data拿出来
-  return getData('http://127.0.0.1:8000/').then(response => response.data);
+  return getData(BASIC_URL).then(response => response.data);
 };
 
 export {getProducts};
