@@ -22,7 +22,7 @@ describe('dataHelper', function () {
     //given
     axios.get.mockResolvedValue('TEXT');
     //_mocks_下data.json; package.json scripts:start-server, npm run start-server获得地址
-    const baseURL = ' http://127.0.0.1:8000/';
+    const baseURL = 'http://127.0.0.1:8000/';
 
     //when
     //此处不关心返回结果
