@@ -23,4 +23,17 @@ describe('service', () => {
     //then
     expect(list).toEqual(productList);
   });
+
+  test('should return empty product list when request has error', async () => {
+    //given
+    //axios响应结构
+    getData.mockRejectedValue(new Error('error'));
+
+    //when
+    //注意getProducts返回的是一个promise
+    const list = await getProducts();
+
+    //then
+    expect(list).toEqual([]);
+  });
 });
