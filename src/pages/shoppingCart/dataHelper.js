@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-function getData() {
-  return axios.get('');
+function getData(path) {
+  return axios.get(path);
 }
 
 export {getData};
