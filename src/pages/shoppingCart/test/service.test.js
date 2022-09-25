@@ -13,8 +13,10 @@ describe('service', () => {
     ];
     //axios响应结构
     getData.mockResolvedValue({
-      data:productList}
-    );
+      data:{
+        products:productList
+      }
+    });
 
     //when
     //注意getProducts返回的是一个promise
